@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+html, body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-size: 120%;
+	line-height: 1.4;
+}
+
+.frame
+{
+	height: 100%;
+	display: flex;
+	align-items: stretch;
+}
+
+.frame > *
+{
+	flex-basis: 50%;
+	flex-grow: 0;
+	flex-shrink: 0;
+	box-sizing: border-box;
+}
+
+.mainimage
+{
+    background-image: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+.mainimage > img
+{
+	width: 100%; height: 100%;
+	object-fit: cover;
+}
+
+.maincontent
+{
+	color: #BECDDE;
+	background-color: #112E33;
+	padding: 2em;
+	padding-top: 40vh;
+	overflow: auto;
+	text-align: center;
+}
+
+.herotext .hgroup
+{
+}
+
+h1, h2
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+h1
+{
+    color: white;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 0.25em;
+}
+
+h2
+{
+	color: aqua;
+	font-size: 1.5em;
+	font-weight: normal;
+	font-style: oblique;
+}
+
+p.icon
+{
+	font-size: 200%;
+	font-weight: bold;
+	margin-top: 10vh;
+}
+
+.maincontent > * + *
+{
+	margin-top: 10vh;
+}
+
+.maincontent > :first-child
+{
+	margin-bottom: 50vh;
+}
+
+
+
+
+/**
+ * Embedded YouTube Resizer
+ * - Allows embedded iframe-based media embeds to scale responsively
+ */
+
+div.embedded-media
+{
+	margin: 1em auto;
+	max-width: 640px;
+}
+
+div.embedded-media > *
+{
+	position: relative;
+	padding-bottom: 58.65%;
+	height: 0;
+}
+
+div.embedded-media > * > iframe
+{
+	position: absolute;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "verdeel-template",
+  "version": "1.0.0",
+  "description": "Simple split-page HTML template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Adam Shailer",
+  "license": "ISC"
+}
